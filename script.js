@@ -256,9 +256,9 @@ function onCalculateClick() {
 }
 
 window.onload = () => {
-    //populateFruitOptions();
-    //populateMutationOptions();
-    //populateVariantOptions();
+    populateFruitOptions();
+    populateMutationOptions();
+    populateVariantOptions();
 
     document.getElementById("calculate-btn").addEventListener("click", onCalculateClick);
 };
