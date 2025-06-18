@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>GAG Plant Value Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        select,
+        input {
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grow A Garden Plant Value Calculator</h1>
+    <p>Made by seizure salad. Values are close but approximate. Uses the same math as the game.</p>
+
+    <label for="fruit-select">Fruit:</label>
+    <select id="fruit-select"></select>
+
+    <label for="weight-input">Weight (kg):</label>
+    <input type="number" id="weight-input" step="0.01" min="0" />
+
+    <label for="variant-select">Variant:</label>
+    <select id="variant-select"/>
+
+    <label>Mutations:</label>
+    <div id="mutations-container"></div>
+
+    <button id="calculate-btn">Calculate Value</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
