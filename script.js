@@ -113,7 +113,7 @@ const mutationData = [
     { name: "Moonlit", valueMulti: 2 },
     { name: "Chilled", valueMulti: 2 },
     { name: "Bloodlit", valueMulti: 4 },
-    { name: "Frozen", valueMulti: 8 },
+    { name: "Frozen", valueMulti: 10 },
     { name: "Shocked", valueMulti: 100 },
     { name: "Celestial", valueMulti: 120 },
     { name: "Choc", valueMulti: 2 },
@@ -154,13 +154,15 @@ function Return_Multiplier(variantName) {
  * @returns {number}
  */
 function CalcValueMulti(plant) {
-    if (!Array.isArray(plant.Mutations)) return 1;
-    let sum = 0;
-    for (const mutName of plant.Mutations) {
-        const m = mutationData.find(m => m.name === mutName);
-        if (m) sum += (m.valueMulti - 1);
-    }
-    return Math.max(1, sum);
+  if (!Array.isArray(plant.Mutations)) return 1;
+
+  let sum = 1;
+  for (const mutName of plant.Mutations) {
+    const m = mutationData.find(m => m.name === mutName);
+    if (m) sum += (m.valueMulti - 1);
+  }
+  
+  return Math.max(1, sum);
 }
 
 /**
