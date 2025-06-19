@@ -206,7 +206,7 @@ function populateVariantOptions() {
     Object.keys(variantMultipliers).forEach(variant => {
         const option = document.createElement("option");
         option.value = variant;
-        option.textContent = variant;
+        option.textContent = variant + " (" + variantMultipliers[variant] + "x)";
         variantSelect.appendChild(option);
     });
 }
@@ -225,7 +225,7 @@ function populateMutationOptions() {
         checkbox.name = "mutation";
 
         label.appendChild(checkbox);
-        label.appendChild(document.createTextNode(a.name));
+        label.appendChild(document.createTextNode(a.name + " (" + a.valueMulti + "x)"));
         container.appendChild(label);
     });
 }
@@ -254,7 +254,7 @@ function onCalculateClick() {
     }
 
     const finalValue = CalculatePlantValue(plant);
-    resultDiv.textContent = `Final Plant Value: ~¢${finalValue}`;
+    resultDiv.textContent = `Final Plant Value: ¢${finalValue}`;
 }
 
 window.onload = () => {
