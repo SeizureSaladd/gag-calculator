@@ -254,7 +254,7 @@ function onCalculateClick() {
     }
 
     const finalValue = CalculatePlantValue(plant);
-    resultDiv.textContent = `Final Plant Value: ¢${finalValue}`;
+    resultDiv.textContent = `Final Plant Value: ¢${finalValue.toLocaleString()}`;
 }
 
 window.onload = () => {
