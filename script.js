@@ -1,7 +1,7 @@
 // ——— ITEM DATA ———
 // First column is base weight, the average weight for that fruit
 // Second column is base value
-// Third column is mystery. Not used in calculations, but found in game files.
+// Third column is chance for the plant to be giant
 const itemData = {
     "Carrot": [0.275, 20, 100],
     "Strawberry": [0.3, 15, 100],
