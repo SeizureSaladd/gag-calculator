@@ -510,28 +510,114 @@ const variantMultipliers = {
 
 // ——— MUTATION DATA ———
 const mutationData = [
-    { name: "Wet", valueMulti: 2 },
-    { name: "Moonlit", valueMulti: 2 },
-    { name: "Chilled", valueMulti: 2 },
-    { name: "Bloodlit", valueMulti: 4 },
-    { name: "Frozen", valueMulti: 10 },
-    { name: "Shocked", valueMulti: 100 },
-    { name: "Celestial", valueMulti: 120 },
-    { name: "Choc", valueMulti: 2 },
-    { name: "Pollinated", valueMulti: 3 },
-    { name: "Burnt", valueMulti: 4 },
-    { name: "HoneyGlazed", valueMulti: 5 },
-    { name: "Plasma", valueMulti: 5 },
-    { name: "Heavenly", valueMulti: 5 },
-    { name: "Cooked", valueMulti: 25 },
-    { name: "Zombified", valueMulti: 25 },
-    { name: "Molten", valueMulti: 25 },
-    { name: "Disco", valueMulti: 125 },
-    { name: "Voidtouched", valueMulti: 135 },
-    { name: "Dawnbound", valueMulti: 150 },
-    { name: "Meteoric", valueMulti: 125 },
-    { name: "Twisted", valueMulti: 5 },
-    // expand later
+    {
+        name: "Meteoric",
+        valueMulti: 125
+    },
+    {
+        name: "Verdant",
+        valueMulti: 4
+    },
+    {
+        name: "Celestial",
+        valueMulti: 120
+    },
+    {
+        name: "Moonlit",
+        valueMulti: 2
+    },
+    {
+        name: "Windstruck",
+        valueMulti: 2
+    },
+    {
+        name: "Pollinated",
+        valueMulti: 3
+    },
+    {
+        name: "Burnt",
+        valueMulti: 4
+    },
+    {
+        name: "Galactic",
+        valueMulti: 120
+    },
+    {
+        name: "Zombified",
+        valueMulti: 25
+    },
+    {
+        name: "Bloodlit",
+        valueMulti: 4
+    },
+    {
+        name: "Shocked",
+        valueMulti: 100
+    },
+    {
+        name: "Heavenly",
+        valueMulti: 5
+    },
+    {
+        name: "Disco",
+        valueMulti: 125
+    },
+    {
+        name: "Twisted",
+        valueMulti: 5
+    },
+    {
+        name: "Alienlike",
+        valueMulti: 100
+    },
+    {
+        name: "Choc",
+        valueMulti: 2
+    },
+    {
+        name: "Molten",
+        valueMulti: 25
+    },
+    {
+        name: "Dawnbound",
+        valueMulti: 150
+    },
+    {
+        name: "Cooked",
+        valueMulti: 10
+    },
+    {
+        name: "Chilled",
+        valueMulti: 2
+    },
+    {
+        name: "Paradisal",
+        valueMulti: 18
+    },
+    {
+        name: "Plasma",
+        valueMulti: 5
+    },
+    {
+        name: "Wet",
+        valueMulti: 2
+    },
+    {
+        name: "Sundried",
+        valueMulti: 85
+    },
+    {
+        name: "Voidtouched",
+        valueMulti: 135
+    },
+    {
+        name: "HoneyGlazed",
+        valueMulti: 5
+    },
+    {
+        name: "Frozen",
+        valueMulti: 10
+    }
 ];
 
 /**
