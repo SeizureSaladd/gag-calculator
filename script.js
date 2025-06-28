@@ -549,8 +549,6 @@ const variantMultipliers = {
     "Normal": 1,
     "Gold": 20,
     "Rainbow": 50,
-    "Ripe": 1,
-    // Add more I guess
 };
 
 // ——— MUTATION DATA ———
@@ -684,6 +682,7 @@ const mutationData = [
     "valueMulti": 10
   }
 ];
+
 /**
  * @param {string} itemName
  * @returns {number[]|null} [baseWeight, baseValue, randomShit]
@@ -737,6 +736,38 @@ function CalculatePlantValue(plant) {
     const multi = CalcValueMulti(plant) * Return_Multiplier(variant);
 
     return Math.round(baseValue * multi * (clamped * clamped));
+}
+
+/**
+ * Calculate weight needed to achieve a target price
+ * @param {{ Item_String: string, Variant: string, Price: number, Mutations?: string[] }} plant
+ * @returns {number}
+ */
+function CalculateWeightFromPrice(plant) {
+    const itemName = plant.Item_String;
+    const variant = plant.Variant;
+    const targetPrice = plant.Price;
+    if (!itemName || !variant || typeof targetPrice !== "number" || targetPrice <= 0) return 0;
+
+    const data = Return_Data(itemName);
+    if (!data) {
+        console.warn("CalculateWeightFromPrice | ItemData is invalid");
+        return 0;
+    }
+
+    const [baseWeight, baseValue] = data;
+    const multi = CalcValueMulti(plant) * Return_Multiplier(variant);
+    
+    if (multi === 0 || baseValue === 0) return 0;
+
+    // Reverse the formula: price = baseValue * multi * (weightRatio^2)
+    // So: weightRatio = sqrt(price / (baseValue * multi))
+    const weightRatio = Math.sqrt(targetPrice / (baseValue * multi));
+    
+    // Apply the same clamping as in the original function
+    const clampedRatio = Math.max(0.95, Math.min(weightRatio, 1e8));
+    
+    return baseWeight * clampedRatio;
 }
 
 
@@ -805,13 +836,101 @@ function onCalculateClick() {
     }
 
     const finalValue = CalculatePlantValue(plant);
-    resultDiv.textContent = `Final Plant Value: ¢${finalValue.toLocaleString()}`;
+    resultDiv.textContent = `Final Plant Value: ${finalValue}¢`;
+}
+
+function onCalculateWeightClick() {
+    const fruitSelect = document.getElementById("fruit-select-reverse");
+    const priceInput = document.getElementById("price-input");
+    const variantSelect = document.getElementById("variant-select-reverse");
+    const mutationCheckboxes = document.querySelectorAll('input[name="mutation-reverse"]:checked');
+    const weightResultDiv = document.getElementById("weight-result");
+
+    const plant = {
+        Item_String: fruitSelect.value,
+        Variant: variantSelect.value,
+        Price: parseFloat(priceInput.value),
+        Mutations: Array.from(mutationCheckboxes).map(cb => cb.value)
+    }
+
+    if (!plant.Item_String) {
+        weightResultDiv.textContent = "Please select a fruit.";
+        return;
+    }
+    if (isNaN(plant.Price) || plant.Price <= 0) {
+        weightResultDiv.textContent = "Please enter a valid positive price.";
+        return;
+    }
+
+    const requiredWeight = CalculateWeightFromPrice(plant);
+    weightResultDiv.textContent = `Weight: ${requiredWeight.toFixed(3)} kg`;
+}
+
+function populateReverseOptions() {
+    // Populate fruit options for reverse calculation
+    const fruitSelect = document.getElementById("fruit-select-reverse");
+    fruitSelect.innerHTML = '';
+    Object.keys(itemData).forEach(fruit => {
+        const option = document.createElement("option");
+        option.value = fruit;
+        option.textContent = fruit;
+        fruitSelect.appendChild(option);
+    });
+
+    // Populate variant options for reverse calculation
+    const variantSelect = document.getElementById("variant-select-reverse");
+    variantSelect.innerHTML = '';
+    Object.keys(variantMultipliers).forEach(variant => {
+        const option = document.createElement("option");
+        option.value = variant;
+        option.textContent = variant + " (" + variantMultipliers[variant] + "x)";
+        variantSelect.appendChild(option);
+    });
+
+    // Populate mutation checkboxes for reverse calculation
+    const container = document.getElementById("mutations-container-reverse");
+    container.innerHTML = '';
+    mutationData.forEach((a) => {
+        const label = document.createElement("label");
+        label.style.display = 'block';
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = a.name;
+        checkbox.name = "mutation-reverse";
+
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(a.name + " (" + a.valueMulti + "x)"));
+        container.appendChild(label);
+    });
+}
+
+function switchTab(tabId) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(tab => tab.classList.remove('active'));
+    
+    // Remove active class from all tab buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => button.classList.remove('active'));
+    
+    // Show the selected tab content
+    document.getElementById(tabId).classList.add('active');
+    
+    // Add active class to the clicked button
+    event.target.classList.add('active');
+    
+    // Clear both result divs when switching tabs
+    document.getElementById('result').textContent = '';
+    document.getElementById('weight-result').textContent = '';
 }
 
 window.onload = () => {
     populateFruitOptions();
     populateMutationOptions();
     populateVariantOptions();
+    populateReverseOptions();
 
     document.getElementById("calculate-btn").addEventListener("click", onCalculateClick);
+    document.getElementById("calculate-weight-btn").addEventListener("click", onCalculateWeightClick);
 };
