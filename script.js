@@ -3,25 +3,30 @@
 // Second column is base value
 // Third column is chance for the plant to be giant
 const itemData = {
+    "Aloe Vera": [
+        350,
+        5.5,
+        69000
+    ],
     "Apple": [
-        3,
         275,
+        3,
         50
     ],
     "Avocado": [
-        6.5,
+        300,
         350,
-        300
+        6.5
     ],
     "Bamboo": [
+        35,
         4,
-        4000,
-        35
+        4000
     ],
     "Banana": [
         1.5,
-        1750,
-        100
+        100,
+        1750
     ],
     "Beanstalk": [
         10,
@@ -34,19 +39,19 @@ const itemData = {
         200
     ],
     "Bell Pepper": [
-        8,
+        325,
         5500,
-        325
+        8
     ],
     "Bendboo": [
-        18,
         155000,
+        18,
         275
     ],
     "Blood Banana": [
         1.5,
-        6000,
-        200
+        200,
+        6000
     ],
     "Blue Lollipop": [
         1,
@@ -55,22 +60,27 @@ const itemData = {
     ],
     "Blueberry": [
         0.2,
-        20,
-        100
+        100,
+        20
+    ],
+    "Burning Bud": [
+        12,
+        500,
+        65000
     ],
     "Cacao": [
-        8,
         12000,
-        250
+        250,
+        8
     ],
     "Cactus": [
-        7,
+        100,
         3400,
-        100
+        7
     ],
     "Candy Blossom": [
-        3,
         100000,
+        3,
         40
     ],
     "Candy Sunflower": [
@@ -79,34 +89,34 @@ const itemData = {
         85
     ],
     "Cantaloupe": [
-        5.5,
+        250,
         34000,
-        250
+        5.5
     ],
     "Carrot": [
         0.275,
-        20,
-        100
+        100,
+        20
     ],
     "Cauliflower": [
+        150,
         5,
-        40,
-        150
+        50
     ],
     "Celestiberry": [
-        2,
         10000,
+        2,
         200
     ],
     "Cherry Blossom": [
         3,
-        500,
-        400
+        400,
+        500
     ],
     "Chocolate Carrot": [
         0.275,
-        11000,
-        100
+        100,
+        11000
     ],
     "Coconut": [
         14,
@@ -115,13 +125,13 @@ const itemData = {
     ],
     "Cocovine": [
         14,
-        66666,
-        275
+        275,
+        66666
     ],
     "Corn": [
+        100,
         2,
-        40,
-        100
+        40
     ],
     "Cranberry": [
         1,
@@ -130,18 +140,18 @@ const itemData = {
     ],
     "Crimson Vine": [
         1,
-        1250,
-        100
+        100,
+        1250
     ],
     "Crocus": [
         0.275,
-        30000,
-        150
+        150,
+        30000
     ],
     "Cursed Fruit": [
-        30,
+        200,
         25750,
-        200
+        30
     ],
     "Daffodil": [
         0.2,
@@ -149,44 +159,49 @@ const itemData = {
         45
     ],
     "Dandelion": [
+        300,
         4,
-        50000,
-        300
+        50000
+    ],
+    "Delphinium": [
+        0.3,
+        100,
+        24000
     ],
     "Dragon Fruit": [
+        100,
         12,
-        4750,
-        100
+        4750
     ],
     "Dragon Pepper": [
+        300,
         6,
-        88888,
-        300
+        88888
     ],
     "Durian": [
-        8,
+        200,
         7500,
-        200
+        8
     ],
     "Easter Egg": [
-        3,
+        20,
         2500,
-        20
+        3
     ],
     "Eggplant": [
-        5,
         12000,
-        220
+        220,
+        5
     ],
     "Elephant Ears": [
         18,
-        77000,
-        500
+        500,
+        77000
     ],
     "Ember Lily": [
         12,
-        66666,
-        450
+        450,
+        66666
     ],
     "Feijoa": [
         10,
@@ -200,38 +215,43 @@ const itemData = {
     ],
     "Glowshroom": [
         0.75,
-        300,
-        100
-    ],
-    "Grape": [
-        3,
-        7850,
-        200
-    ],
-    "Green Apple": [
-        3,
-        300,
-        200
-    ],
-    "Hive Fruit": [
-        8,
-        62000,
+        100,
         300
     ],
+    "Grape": [
+        200,
+        3,
+        7850
+    ],
+    "Green Apple": [
+        200,
+        3,
+        300
+    ],
+    "Guanabana": [
+        4,
+        400,
+        72500
+    ],
+    "Hive Fruit": [
+        300,
+        62000,
+        8
+    ],
     "Honeysuckle": [
-        12,
         100000,
+        12,
         400
     ],
     "Ice Cream Bean": [
+        200,
         4,
-        4500,
-        200
+        4500
     ],
     "Kiwi": [
-        5,
         2750,
-        300
+        300,
+        5
     ],
     "Lavender": [
         0.275,
@@ -244,9 +264,14 @@ const itemData = {
         50
     ],
     "Lilac": [
+        250,
         3,
-        35000,
-        250
+        35000
+    ],
+    "Lily of the Valley": [
+        400,
+        49120,
+        6
     ],
     "Lime": [
         1,
@@ -254,9 +279,9 @@ const itemData = {
         125
     ],
     "Loquat": [
+        200,
         6.5,
-        8000,
-        200
+        8000
     ],
     "Lotus": [
         20,
@@ -264,104 +289,109 @@ const itemData = {
         650
     ],
     "Lumira": [
+        350,
         6,
-        85000,
-        350
+        85000
     ],
     "Mango": [
         15,
-        6500,
-        200
+        200,
+        6500
     ],
     "Manuka Flower": [
         0.3,
-        25000,
-        200
+        200,
+        25000
     ],
     "Mega Mushroom": [
-        70,
+        2000000,
         500,
-        2000000
+        70
     ],
     "Mint": [
         1,
-        5250,
-        150
+        150,
+        5250
     ],
     "Moon Blossom": [
         3,
-        66666,
-        400
+        400,
+        66666
     ],
     "Moon Mango": [
         15,
-        50000,
-        300
+        300,
+        50000
     ],
     "Moon Melon": [
-        8,
         18000,
-        300
+        300,
+        8
     ],
     "Moonflower": [
         2,
-        9500,
-        200
+        200,
+        9500
     ],
     "Moonglow": [
-        7,
         25000,
-        400
+        400,
+        7
     ],
     "Mushroom": [
-        25,
         151000,
-        220
+        220,
+        25
     ],
     "Nectar Thorn": [
-        7,
+        350,
         44444,
-        350
+        7
     ],
     "Nectarine": [
+        200,
         3,
-        48000,
-        200
+        48000
     ],
     "Nectarshade": [
         0.8,
-        50000,
-        100
+        100,
+        50000
     ],
     "Nightshade": [
         0.5,
-        3500,
-        100
+        100,
+        3500
     ],
     "Noble Flower": [
-        5,
         20000,
-        250
+        250,
+        5
     ],
     "Orange Tulip": [
         0.05,
-        850,
-        55
+        55,
+        850
     ],
     "Papaya": [
-        3,
         1000,
+        3,
         60
     ],
     "Parasol Flower": [
-        6,
         200000,
-        350
+        350,
+        6
     ],
     "Passionfruit": [
         3,
         3550,
         40
+    ],
+    "Peace Lily": [
+        0.6,
+        100,
+        24000
     ],
     "Peach": [
         2,
@@ -369,38 +399,43 @@ const itemData = {
         70
     ],
     "Pear": [
-        3,
+        120,
         20000,
-        120
+        3
     ],
     "Pepper": [
+        200,
         5,
-        8000,
-        200
+        8000
     ],
     "Pineapple": [
-        3,
         2000,
+        3,
         70
     ],
     "Pink Lily": [
+        400,
         6,
-        65000,
-        400
+        65000
     ],
     "Pink Tulip": [
         0.05,
-        850,
-        55
+        55,
+        850
+    ],
+    "Pitcher Plant": [
+        12,
+        275,
+        32000
     ],
     "Prickly Pear": [
+        375,
         7,
-        7000,
-        375
+        7000
     ],
     "Pumpkin": [
-        8,
         3400,
+        8,
         80
     ],
     "Purple Cabbage": [
@@ -410,8 +445,13 @@ const itemData = {
     ],
     "Purple Dahlia": [
         12,
-        75000,
-        400
+        400,
+        75000
+    ],
+    "Rafflesia": [
+        3500,
+        8,
+        80
     ],
     "Raspberry": [
         0.75,
@@ -425,43 +465,43 @@ const itemData = {
     ],
     "Rose": [
         1,
-        5000,
-        100
+        100,
+        5000
     ],
     "Rosy Delight": [
         10,
-        69000,
-        450
+        450,
+        69000
     ],
     "Soul Fruit": [
+        200,
         25,
-        7750,
-        200
+        7750
     ],
     "Starfruit": [
-        3,
         15000,
-        250
+        250,
+        3
     ],
     "Strawberry": [
         0.3,
-        15,
-        100
+        100,
+        15
     ],
     "Succulent": [
-        5,
+        175,
         25000,
-        175
+        5
     ],
     "Sugar Apple": [
-        9,
+        200,
         48000,
-        200
+        9
     ],
     "Suncoil": [
         10,
-        80000,
-        400
+        400,
+        80000
     ],
     "Sunflower": [
         16.5,
@@ -470,33 +510,38 @@ const itemData = {
     ],
     "Tomato": [
         0.5,
-        30,
-        100
+        100,
+        30
     ],
     "Traveler's Fruit": [
-        2,
-        20000,
-        250
+        15,
+        500,
+        59000
     ],
     "Venus Fly Trap": [
         10,
-        85000,
-        650
+        650,
+        85000
     ],
     "Violet Corn": [
+        250,
         3,
-        50000,
-        250
+        50000
     ],
     "Watermelon": [
-        7,
         3000,
+        7,
         70
     ],
+    "White Mulberry": [
+        200,
+        3,
+        3000
+    ],
     "Wild Carrot": [
-        0.3,
-        25000,
-        100
+        1.3,
+        100,
+        25000
     ]
 };
 // ——— VARIANT MULTIPLIERS ———
@@ -510,116 +555,135 @@ const variantMultipliers = {
 
 // ——— MUTATION DATA ———
 const mutationData = [
-    {
-        name: "Meteoric",
-        valueMulti: 125
-    },
-    {
-        name: "Verdant",
-        valueMulti: 4
-    },
-    {
-        name: "Celestial",
-        valueMulti: 120
-    },
-    {
-        name: "Moonlit",
-        valueMulti: 2
-    },
-    {
-        name: "Windstruck",
-        valueMulti: 2
-    },
-    {
-        name: "Pollinated",
-        valueMulti: 3
-    },
-    {
-        name: "Burnt",
-        valueMulti: 4
-    },
-    {
-        name: "Galactic",
-        valueMulti: 120
-    },
-    {
-        name: "Zombified",
-        valueMulti: 25
-    },
-    {
-        name: "Bloodlit",
-        valueMulti: 4
-    },
-    {
-        name: "Shocked",
-        valueMulti: 100
-    },
-    {
-        name: "Heavenly",
-        valueMulti: 5
-    },
-    {
-        name: "Disco",
-        valueMulti: 125
-    },
-    {
-        name: "Twisted",
-        valueMulti: 5
-    },
-    {
-        name: "Alienlike",
-        valueMulti: 100
-    },
-    {
-        name: "Choc",
-        valueMulti: 2
-    },
-    {
-        name: "Molten",
-        valueMulti: 25
-    },
-    {
-        name: "Dawnbound",
-        valueMulti: 150
-    },
-    {
-        name: "Cooked",
-        valueMulti: 10
-    },
-    {
-        name: "Chilled",
-        valueMulti: 2
-    },
-    {
-        name: "Paradisal",
-        valueMulti: 18
-    },
-    {
-        name: "Plasma",
-        valueMulti: 5
-    },
-    {
-        name: "Wet",
-        valueMulti: 2
-    },
-    {
-        name: "Sundried",
-        valueMulti: 85
-    },
-    {
-        name: "Voidtouched",
-        valueMulti: 135
-    },
-    {
-        name: "HoneyGlazed",
-        valueMulti: 5
-    },
-    {
-        name: "Frozen",
-        valueMulti: 10
-    }
+  {
+    "name": "Pollinated",
+    "valueMulti": 3
+  },
+  {
+    "name": "Wet",
+    "valueMulti": 2
+  },
+  {
+    "name": "Bloodlit",
+    "valueMulti": 4
+  },
+  {
+    "name": "Meteoric",
+    "valueMulti": 125
+  },
+  {
+    "name": "Verdant",
+    "valueMulti": 4
+  },
+  {
+    "name": "Zombified",
+    "valueMulti": 25
+  },
+  {
+    "name": "Celestial",
+    "valueMulti": 120
+  },
+  {
+    "name": "Moonlit",
+    "valueMulti": 2
+  },
+  {
+    "name": "Cloudtouched",
+    "valueMulti": 5
+  },
+  {
+    "name": "Windstruck",
+    "valueMulti": 2
+  },
+  {
+    "name": "Fried",
+    "valueMulti": 8
+  },
+  {
+    "name": "Burnt",
+    "valueMulti": 4
+  },
+  {
+    "name": "Drenched",
+    "valueMulti": 5
+  },
+  {
+    "name": "Heavenly",
+    "valueMulti": 5
+  },
+  {
+    "name": "Plasma",
+    "valueMulti": 5
+  },
+  {
+    "name": "Shocked",
+    "valueMulti": 100
+  },
+  {
+    "name": "Disco",
+    "valueMulti": 125
+  },
+  {
+    "name": "Aurora",
+    "valueMulti": 90
+  },
+  {
+    "name": "Twisted",
+    "valueMulti": 5
+  },
+  {
+    "name": "Alienlike",
+    "valueMulti": 100
+  },
+  {
+    "name": "Choc",
+    "valueMulti": 2
+  },
+  {
+    "name": "Molten",
+    "valueMulti": 25
+  },
+  {
+    "name": "Dawnbound",
+    "valueMulti": 150
+  },
+  {
+    "name": "Cooked",
+    "valueMulti": 10
+  },
+  {
+    "name": "Chilled",
+    "valueMulti": 2
+  },
+  {
+    "name": "Paradisal",
+    "valueMulti": 100
+  },
+  {
+    "name": "Wiltproof",
+    "valueMulti": 4
+  },
+  {
+    "name": "Sundried",
+    "valueMulti": 85
+  },
+  {
+    "name": "Galactic",
+    "valueMulti": 120
+  },
+  {
+    "name": "Voidtouched",
+    "valueMulti": 135
+  },
+  {
+    "name": "HoneyGlazed",
+    "valueMulti": 5
+  },
+  {
+    "name": "Frozen",
+    "valueMulti": 10
+  }
 ];
-
 /**
  * @param {string} itemName
  * @returns {number[]|null} [baseWeight, baseValue, randomShit]
