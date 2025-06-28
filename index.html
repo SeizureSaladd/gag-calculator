@@ -26,32 +26,102 @@
             cursor: pointer;
         }
 
-        #result {
+        #result, #weight-result {
             margin-top: 20px;
             font-weight: bold;
+        }
+
+        .tab-container {
+            margin-bottom: 20px;
+        }
+
+        .tab-buttons {
+            display: flex;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .tab-button {
+            background: #f0f0f0;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-top: 2px solid transparent;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        .tab-button:first-child {
+            border-left: 2px solid #ccc;
+        }
+
+        .tab-button:last-child {
+            border-right: 2px solid #ccc;
+        }
+
+        .tab-button.active {
+            background: white;
+            border-top: 2px solid #424242;
+            border-bottom: 2px solid white;
+            margin-bottom: -2px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
         }
     </style>
 </head>
 
 <body>
     <h1>Grow A Garden Plant Value Calculator</h1>
-    <p>Made by seizure salad. Values are 100% accurate. Only discrepancies would come from weight. The game stores weights up to 3 decimal places but rounds, so try weight +-0.005</p>
+    <p>Made by seizure salad. Values are 100% accurate. Only discrepancies would come from weight. The game stores weights up to 3 decimal places but rounds, so try weight +-0.005. New Weight Calculator you can use with Magnifying Glass!!</p>
 
-    <label for="fruit-select">Fruit:</label>
-    <select id="fruit-select"></select>
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="switchTab('value-tab')">Calculate Value</button>
+            <button class="tab-button" onclick="switchTab('weight-tab')">Calculate Weight</button>
+        </div>
 
-    <label for="weight-input">Weight (kg):</label>
-    <input type="number" id="weight-input" step="0.01" min="0" />
+        <div id="value-tab" class="tab-content active">
+            <label for="fruit-select">Fruit:</label>
+            <select id="fruit-select"></select>
 
-    <label for="variant-select">Variant:</label>
-    <select id="variant-select"></select>
+            <label for="weight-input">Weight (kg):</label>
+            <input type="number" id="weight-input" step="0.01" min="0" />
 
-    <label>Mutations:</label>
-    <div id="mutations-container"></div>
+            <label for="variant-select">Variant:</label>
+            <select id="variant-select"></select>
 
-    <button id="calculate-btn">Calculate Value</button>
+            <label>Mutations:</label>
+            <div id="mutations-container"></div>
+
+            <button id="calculate-btn">Calculate Value</button>
+        </div>
+
+        <div id="weight-tab" class="tab-content">
+            <label for="fruit-select-reverse">Fruit:</label>
+            <select id="fruit-select-reverse"></select>
+
+            <label for="price-input">Price (¢):</label>
+            <input type="number" id="price-input" step="1" min="0" />
+
+            <label for="variant-select-reverse">Variant:</label>
+            <select id="variant-select-reverse"></select>
+
+            <label>Mutations:</label>
+            <div id="mutations-container-reverse"></div>
+
+            <button id="calculate-weight-btn">Calculate Weight</button>
+        </div>
+    </div>
 
     <div id="result"></div>
+    <div id="weight-result"></div>
 
     <script src="script.js"></script>
 </body>
