@@ -63,9 +63,19 @@ const itemData = {
         20,
         100
     ],
+    "Bone Blossom": [
+        7,
+        175000,
+        200
+    ],
+    "Boneboo": [
+        15,
+        141141,
+        300
+    ],
     "Burning Bud": [
         12,
-        65000,
+        70000,
         500
     ],
     "Cacao": [
@@ -208,6 +218,21 @@ const itemData = {
         13000,
         400
     ],
+    "Firefly Fern": [
+        5,
+        72000,
+        400
+    ],
+    "Firework Flower": [
+        20,
+        151000,
+        450
+    ],
+    "Fossilight": [
+        4,
+        88000,
+        500
+    ],
     "Foxglove": [
         2,
         20000,
@@ -230,7 +255,7 @@ const itemData = {
     ],
     "Guanabana": [
         4,
-        72500,
+        70500,
         400
     ],
     "Hive Fruit": [
@@ -242,6 +267,11 @@ const itemData = {
         12,
         100000,
         400
+    ],
+    "Horned Dinoshroom": [
+        5,
+        69000,
+        275
     ],
     "Ice Cream Bean": [
         4,
@@ -262,6 +292,11 @@ const itemData = {
         1,
         350,
         50
+    ],
+    "Liberty Lily": [
+        6.5,
+        30000,
+        350
     ],
     "Lilac": [
         3,
@@ -307,6 +342,11 @@ const itemData = {
         70,
         500,
         2000000
+    ],
+    "Merica Mushroom": [
+        30,
+        40000,
+        20
     ],
     "Mint": [
         1,
@@ -378,6 +418,11 @@ const itemData = {
         1000,
         60
     ],
+    "Paradise Petal": [
+        2.75,
+        25000,
+        250
+    ],
     "Parasol Flower": [
         6,
         200000,
@@ -425,7 +470,7 @@ const itemData = {
     ],
     "Pitcher Plant": [
         12,
-        32000,
+        52000,
         275
     ],
     "Prickly Pear": [
@@ -482,6 +527,11 @@ const itemData = {
         3,
         15000,
         250
+    ],
+    "Stonebite": [
+        1,
+        35000,
+        200
     ],
     "Strawberry": [
         0.3,
@@ -554,132 +604,156 @@ const variantMultipliers = {
 // ——— MUTATION DATA ———
 const mutationData = [
   {
-    "name": "Pollinated",
-    "valueMulti": 3
+    "Name": "Meteoric",
+    "ValueMulti": 125
   },
   {
-    "name": "Wet",
-    "valueMulti": 2
+    "Name": "Celestial",
+    "ValueMulti": 120
   },
   {
-    "name": "Bloodlit",
-    "valueMulti": 4
+    "Name": "Windstruck",
+    "ValueMulti": 2
   },
   {
-    "name": "Meteoric",
-    "valueMulti": 125
+    "Name": "Fried",
+    "ValueMulti": 8
   },
   {
-    "name": "Verdant",
-    "valueMulti": 4
+    "Name": "Burnt",
+    "ValueMulti": 4
   },
   {
-    "name": "Zombified",
-    "valueMulti": 25
+    "Name": "Drenched",
+    "ValueMulti": 5
   },
   {
-    "name": "Celestial",
-    "valueMulti": 120
+    "Name": "Shocked",
+    "ValueMulti": 100
   },
   {
-    "name": "Moonlit",
-    "valueMulti": 2
+    "Name": "Aurora",
+    "ValueMulti": 90
   },
   {
-    "name": "Cloudtouched",
-    "valueMulti": 5
+    "Name": "Choc",
+    "ValueMulti": 2
   },
   {
-    "name": "Windstruck",
-    "valueMulti": 2
+    "Name": "Bloodlit",
+    "ValueMulti": 4
   },
   {
-    "name": "Fried",
-    "valueMulti": 8
+    "Name": "Paradisal",
+    "ValueMulti": 100
   },
   {
-    "name": "Burnt",
-    "valueMulti": 4
+    "Name": "Clay",
+    "ValueMulti": 3
   },
   {
-    "name": "Drenched",
-    "valueMulti": 5
+    "Name": "Amber",
+    "ValueMulti": 10
   },
   {
-    "name": "Heavenly",
-    "valueMulti": 5
+    "Name": "Zombified",
+    "ValueMulti": 25
   },
   {
-    "name": "Plasma",
-    "valueMulti": 5
+    "Name": "HoneyGlazed",
+    "ValueMulti": 5
   },
   {
-    "name": "Shocked",
-    "valueMulti": 100
+    "Name": "Frozen",
+    "ValueMulti": 10
   },
   {
-    "name": "Disco",
-    "valueMulti": 125
+    "Name": "OldAmber",
+    "ValueMulti": 20
   },
   {
-    "name": "Aurora",
-    "valueMulti": 90
+    "Name": "Verdant",
+    "ValueMulti": 4
   },
   {
-    "name": "Twisted",
-    "valueMulti": 5
+    "Name": "Sandy",
+    "ValueMulti": 3
   },
   {
-    "name": "Alienlike",
-    "valueMulti": 100
+    "Name": "Moonlit",
+    "ValueMulti": 2
   },
   {
-    "name": "Choc",
-    "valueMulti": 2
+    "Name": "AncientAmber",
+    "ValueMulti": 50
   },
   {
-    "name": "Molten",
-    "valueMulti": 25
+    "Name": "Ceramic",
+    "ValueMulti": 30
   },
   {
-    "name": "Dawnbound",
-    "valueMulti": 150
+    "Name": "Pollinated",
+    "ValueMulti": 3
   },
   {
-    "name": "Cooked",
-    "valueMulti": 10
+    "Name": "Disco",
+    "ValueMulti": 125
   },
   {
-    "name": "Chilled",
-    "valueMulti": 2
+    "Name": "Twisted",
+    "ValueMulti": 5
   },
   {
-    "name": "Paradisal",
-    "valueMulti": 100
+    "Name": "Alienlike",
+    "ValueMulti": 100
   },
   {
-    "name": "Wiltproof",
-    "valueMulti": 4
+    "Name": "Plasma",
+    "ValueMulti": 5
   },
   {
-    "name": "Sundried",
-    "valueMulti": 85
+    "Name": "Molten",
+    "ValueMulti": 25
   },
   {
-    "name": "Galactic",
-    "valueMulti": 120
+    "Name": "Dawnbound",
+    "ValueMulti": 150
   },
   {
-    "name": "Voidtouched",
-    "valueMulti": 135
+    "Name": "Cooked",
+    "ValueMulti": 10
   },
   {
-    "name": "HoneyGlazed",
-    "valueMulti": 5
+    "Name": "Chilled",
+    "ValueMulti": 2
   },
   {
-    "name": "Frozen",
-    "valueMulti": 10
+    "Name": "Heavenly",
+    "ValueMulti": 5
+  },
+  {
+    "Name": "Wiltproof",
+    "ValueMulti": 4
+  },
+  {
+    "Name": "Sundried",
+    "ValueMulti": 85
+  },
+  {
+    "Name": "Galactic",
+    "ValueMulti": 120
+  },
+  {
+    "Name": "Voidtouched",
+    "ValueMulti": 135
+  },
+  {
+    "Name": "Wet",
+    "ValueMulti": 2
+  },
+  {
+    "Name": "Cloudtouched",
+    "ValueMulti": 5
   }
 ];
 
