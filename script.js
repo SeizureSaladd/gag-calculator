@@ -604,156 +604,156 @@ const variantMultipliers = {
 // ——— MUTATION DATA ———
 const mutationData = [
   {
-    "Name": "Meteoric",
-    "ValueMulti": 125
+    "name": "Meteoric",
+    "valueMulti": 125
   },
   {
-    "Name": "Celestial",
-    "ValueMulti": 120
+    "name": "Celestial",
+    "valueMulti": 120
   },
   {
-    "Name": "Windstruck",
-    "ValueMulti": 2
+    "name": "Windstruck",
+    "valueMulti": 2
   },
   {
-    "Name": "Fried",
-    "ValueMulti": 8
+    "name": "Fried",
+    "valueMulti": 8
   },
   {
-    "Name": "Burnt",
-    "ValueMulti": 4
+    "name": "Burnt",
+    "valueMulti": 4
   },
   {
-    "Name": "Drenched",
-    "ValueMulti": 5
+    "name": "Drenched",
+    "valueMulti": 5
   },
   {
-    "Name": "Shocked",
-    "ValueMulti": 100
+    "name": "Shocked",
+    "valueMulti": 100
   },
   {
-    "Name": "Aurora",
-    "ValueMulti": 90
+    "name": "Aurora",
+    "valueMulti": 90
   },
   {
-    "Name": "Choc",
-    "ValueMulti": 2
+    "name": "Choc",
+    "valueMulti": 2
   },
   {
-    "Name": "Bloodlit",
-    "ValueMulti": 4
+    "name": "Bloodlit",
+    "valueMulti": 4
   },
   {
-    "Name": "Paradisal",
-    "ValueMulti": 100
+    "name": "Paradisal",
+    "valueMulti": 100
   },
   {
-    "Name": "Clay",
-    "ValueMulti": 3
+    "name": "Clay",
+    "valueMulti": 3
   },
   {
-    "Name": "Amber",
-    "ValueMulti": 10
+    "name": "Amber",
+    "valueMulti": 10
   },
   {
-    "Name": "Zombified",
-    "ValueMulti": 25
+    "name": "Zombified",
+    "valueMulti": 25
   },
   {
-    "Name": "HoneyGlazed",
-    "ValueMulti": 5
+    "name": "HoneyGlazed",
+    "valueMulti": 5
   },
   {
-    "Name": "Frozen",
-    "ValueMulti": 10
+    "name": "Frozen",
+    "valueMulti": 10
   },
   {
-    "Name": "OldAmber",
-    "ValueMulti": 20
+    "name": "OldAmber",
+    "valueMulti": 20
   },
   {
-    "Name": "Verdant",
-    "ValueMulti": 4
+    "name": "Verdant",
+    "valueMulti": 4
   },
   {
-    "Name": "Sandy",
-    "ValueMulti": 3
+    "name": "Sandy",
+    "valueMulti": 3
   },
   {
-    "Name": "Moonlit",
-    "ValueMulti": 2
+    "name": "Moonlit",
+    "valueMulti": 2
   },
   {
-    "Name": "AncientAmber",
-    "ValueMulti": 50
+    "name": "AncientAmber",
+    "valueMulti": 50
   },
   {
-    "Name": "Ceramic",
-    "ValueMulti": 30
+    "name": "Ceramic",
+    "valueMulti": 30
   },
   {
-    "Name": "Pollinated",
-    "ValueMulti": 3
+    "name": "Pollinated",
+    "valueMulti": 3
   },
   {
-    "Name": "Disco",
-    "ValueMulti": 125
+    "name": "Disco",
+    "valueMulti": 125
   },
   {
-    "Name": "Twisted",
-    "ValueMulti": 5
+    "name": "Twisted",
+    "valueMulti": 5
   },
   {
-    "Name": "Alienlike",
-    "ValueMulti": 100
+    "name": "Alienlike",
+    "valueMulti": 100
   },
   {
-    "Name": "Plasma",
-    "ValueMulti": 5
+    "name": "Plasma",
+    "valueMulti": 5
   },
   {
-    "Name": "Molten",
-    "ValueMulti": 25
+    "name": "Molten",
+    "valueMulti": 25
   },
   {
-    "Name": "Dawnbound",
-    "ValueMulti": 150
+    "name": "Dawnbound",
+    "valueMulti": 150
   },
   {
-    "Name": "Cooked",
-    "ValueMulti": 10
+    "name": "Cooked",
+    "valueMulti": 10
   },
   {
-    "Name": "Chilled",
-    "ValueMulti": 2
+    "name": "Chilled",
+    "valueMulti": 2
   },
   {
-    "Name": "Heavenly",
-    "ValueMulti": 5
+    "name": "Heavenly",
+    "valueMulti": 5
   },
   {
-    "Name": "Wiltproof",
-    "ValueMulti": 4
+    "name": "Wiltproof",
+    "valueMulti": 4
   },
   {
-    "Name": "Sundried",
-    "ValueMulti": 85
+    "name": "Sundried",
+    "valueMulti": 85
   },
   {
-    "Name": "Galactic",
-    "ValueMulti": 120
+    "name": "Galactic",
+    "valueMulti": 120
   },
   {
-    "Name": "Voidtouched",
-    "ValueMulti": 135
+    "name": "Voidtouched",
+    "valueMulti": 135
   },
   {
-    "Name": "Wet",
-    "ValueMulti": 2
+    "name": "Wet",
+    "valueMulti": 2
   },
   {
-    "Name": "Cloudtouched",
-    "ValueMulti": 5
+    "name": "Cloudtouched",
+    "valueMulti": 5
   }
 ];
 
